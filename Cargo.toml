@@ -1,0 +1,17 @@
+[package]
+name = "yidaozhan_new_tgbot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+teloxide = { version = "0.12", features = ["macros"] }
+pretty_env_logger = "0.5.0"
+tokio = { version = "1.8", features = ["rt-multi-thread", "macros"] }
+serde = { version = "1.0.188", features = ["derive"] }
+serde_yaml = "0.9.25"
+lazy_static = "1.4.0"
+log = { version = "0.4.20", features = ["max_level_info"] }
+base64 = "0.21.3"
+reqwest = { version = "0.11.6", features = ["blocking"] }
